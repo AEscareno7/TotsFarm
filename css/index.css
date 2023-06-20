@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@600&display=swap');
+
+body {
+    background-image: url('/imgs/granero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Phudu', cursive;
+}
+
+.svg {
+    width: 300px;
+    height: 300px;
+    display: block;
+    vertical-align: middle;
+}
+
+h1 {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.red {
+    color: #ff3131;
+}
+
+.blue {
+    color: #0085b6;
+}
+
+.aqua {
+    color: #00d49d;
+}
+
+.brown {
+    color: #2b1511;
+}
+
+.green {
+    color: #00bf63;
+}
+
+.Ar {
+    color: #5271ff;
+}
+
+.violet {
+    color: #5e17eb;
+}
+
+.orange {
+    color: #ff914d;
+}
+
+.pink {
+    color: #ff5757;
+}
+
+.login-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 400px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: #F9E79F;
+    opacity: 0.9;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box .user-box {
+    position: relative;
+    margin-top: 60px;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #2b1511;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #0085b6;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ff3131;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ff3131;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00d49d;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box a:hover {
+    background: #ff5757;
+    color: #2b1511;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff5757,
+        0 0 25px #ff5757,
+        0 0 50px #ff5757,
+        0 0 100px #ff5757;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #5271ff);
+    animation: btn-anim1 2s linear infinite;
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+}
+
+button svg {
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+.play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+}
+
+button:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F9E79F;
+    opacity: 0.9;
+}
+
+#logo h1 {
+    margin: 0;
+}
+
+#music button {
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 150px;
+}
+
+nav li {
+    margin-left: 50px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+}
+
+button svg {
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+.play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+}
+
+button:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+
+.regresarjuego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.fireworks:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    animation: fireworks 4s ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes fireworks {
+    0% {
+        background: radial-gradient(circle at 0% 50%, #ff4136, #ffdc00, #2ecc40, #0074d9);
+        transform: scale(1) rotate(0);
+    }
+
+    50% {
+        background: radial-gradient(circle at 100% 50%, #ff4136, #ffdc00, #2ecc40, #0074d9);
+        transform: scale(1.5) rotate(180deg);
+    }
+
+    100% {
+        background: radial-gradient(circle at 50% 50%, #ff4136, #ffdc00, #2ecc40, #0074d9);
+        transform: scale(1) rotate(360deg);
+    }
+}

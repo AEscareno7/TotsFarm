@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@600&display=swap');
+
+* {
+    font-family: 'Phudu', cursive;
+}
+
+body {
+    background-image: url('/imgs/granero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    margin-top: 9%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #F9E79F;
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.card__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover .card__image img {
+    transform: scale(1.2);
+}
+
+.card:hover .card__content {
+    transform: translateY(-100%);
+}
+
+.card__image {
+    height: 400px;
+    width: 300px;
+    background-color: #F9E79F;
+    background-image: url(/imgs/uaa.jpg);
+}
+
+.names {
+    width: 190px;
+    height: 254px;
+    background-color: #F9E79F;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    margin: auto;
+    font-family: inherit;
+}
+
+.names span {
+    font-weight: 600;
+    color: #ff5757;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+
+.names .job {
+    font-weight: 400;
+    color: #ff5757;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1em;
+}
+
+.names .img {
+    width: 70px;
+    height: 70px;
+    background: #e8e8e8;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F9E79F;
+    opacity: 0.9;
+}
+
+#logo h1 {
+    margin: 0;
+}
+
+#music button {
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 150px;
+}
+
+nav li {
+    margin-left: 50px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+}
+
+button svg {
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+.play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+}
+
+button:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+
+.regresarjuego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
